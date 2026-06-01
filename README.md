@@ -123,16 +123,6 @@ Loop:
    └─ Check if User Said Goodbye → Exit or Continue
 ```
 
-## Potential Enhancements
-
-Future versions could include:
-- Sentiment analysis for emotionally intelligent responses
-- Random response variations for more natural conversation
-- Conversation history tracking and statistics
-- More topics and knowledge base expansion
-- Chat logging to files
-- Multi-language support
-
 ## Learning Outcomes
 
 By studying this code, you'll learn:
@@ -150,3 +140,6 @@ This project is open source and available for educational purposes.
 ## Author
 
 Created as an educational chatbot project to demonstrate fundamental Python programming concepts.
+By - Anupam Yadav 
+
+My linkedin - www.linkedin.com/in/anupam-yadavv
