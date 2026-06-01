@@ -3,12 +3,7 @@ import re
 
 
 def get_time_greeting():
-    """
-    Return a greeting based on the current time of day.
     
-    Returns:
-        str: Time-appropriate greeting
-    """
     hour = datetime.now().hour
     
     if hour < 12:
@@ -20,32 +15,14 @@ def get_time_greeting():
 
 
 def clean_input(user_input):
-    """
-    Clean user input by removing punctuation and extra spaces.
     
-    Args:
-        user_input (str): Raw user input
-        
-    Returns:
-        str: Cleaned input
-    """
     # Remove punctuation and convert to lowercase
     cleaned = re.sub(r'[?!.,;:]', '', user_input.lower().strip())
     return cleaned
 
 
 def find_keywords(user_input, keyword_list):
-    """
-    Check if any keywords from keyword_list appear in user_input.
-    Handles partial matches and punctuation variations.
     
-    Args:
-        user_input (str): User's message
-        keyword_list (list): List of keywords to search for
-        
-    Returns:
-        bool: True if any keyword is found
-    """
     cleaned_input = clean_input(user_input)
     
     for keyword in keyword_list:
@@ -58,16 +35,7 @@ def find_keywords(user_input, keyword_list):
 
 
 def get_response(user_input, user_name):
-    """
-    Match user input to predefined responses with personalization.
     
-    Args:
-        user_input (str): The user's input message
-        user_name (str): The user's name for personalization
-        
-    Returns:
-        str: The chatbot's response
-    """
     if not user_input.strip():
         return "Please say something!"
     
@@ -97,9 +65,7 @@ def get_response(user_input, user_name):
 
 
 def run_chatbot():
-    """
-    Run the chatbot in a loop until the user says goodbye.
-    """
+    
     print("=" * 60)
     print("Welcome to the Enhanced Simple Chatbot!")
     print("=" * 60)
